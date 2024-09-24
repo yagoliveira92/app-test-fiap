@@ -28,16 +28,15 @@ Future<void> init() async {
     LocalDataManager(),
   );
 
-  dependency.registerLazySingleton<IAppConstantsManager>(
-    AppConstantsManager(
+  dependency.registerLazySingleton<AppConstantsManager>(
+    AppConstantsManagerImpl(
       apiBaseUrl: EnvironmentsEnumMethods.envFromString(environment).apiBaseUrl,
-      apiKey: EnvironmentsEnumMethods.envFromString(environment).apiKey,
     ),
   );
 
   dependency.registerLazySingleton<IRemoteDataProvider>(
     RemoteDataProvider(
-      appConstants: dependency.get<IAppConstantsManager>(),
+      appConstants: dependency.get<AppConstantsManager>(),
     ),
   );
 

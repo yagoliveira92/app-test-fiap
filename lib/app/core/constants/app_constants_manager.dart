@@ -1,21 +1,14 @@
-abstract class IAppConstantsManager {
+abstract class AppConstantsManager {
   String get apiBaseUrl;
-  String get apiKey;
 }
 
-class AppConstantsManager implements IAppConstantsManager {
-  const AppConstantsManager({
+class AppConstantsManagerImpl implements AppConstantsManager {
+  const AppConstantsManagerImpl({
     required String apiBaseUrl,
-    required String apiKey,
-  })  : _apiBaseUrl = apiBaseUrl,
-        _apiKey = apiKey;
+  }) : _apiBaseUrl = apiBaseUrl;
 
   final String _apiBaseUrl;
-  final String _apiKey;
 
   @override
   String get apiBaseUrl => _apiBaseUrl;
-
-  @override
-  String get apiKey => _apiKey;
 }

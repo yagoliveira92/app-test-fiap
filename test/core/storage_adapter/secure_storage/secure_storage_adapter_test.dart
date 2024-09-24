@@ -1,4 +1,4 @@
-import 'package:weather_app/app/core/storage_adapter/secure_storage/secure_storage_adapter.dart';
+import 'package:app_test_fiap/app/core/storage_adapter/secure_storage/secure_storage_adapter.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';

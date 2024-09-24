@@ -1,4 +1,4 @@
-import 'package:weather_app/app/core/remote_adapter/provider/i_remote_data_provider.dart';
+import 'package:app_test_fiap/app/core/remote_adapter/provider/i_remote_data_provider.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';

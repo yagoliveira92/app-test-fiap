@@ -1,24 +1,20 @@
 enum EnvironmentEnum {
   production(
     type: 'production',
-    apiBaseUrl: 'https://api.openweathermap.org/data/2.5/',
-    apiKey: String.fromEnvironment('WEATHER_API_KEY'),
+    apiBaseUrl: 'https://gist.githubusercontent.com/viniciosneves/',
   ),
   development(
     type: 'development',
-    apiBaseUrl: 'https://api.openweathermap.org/data/2.5/',
-    apiKey: String.fromEnvironment('WEATHER_API_KEY'),
+    apiBaseUrl: 'https://gist.githubusercontent.com/viniciosneves/',
   );
 
   const EnvironmentEnum({
     required this.type,
     required this.apiBaseUrl,
-    required this.apiKey,
   });
 
   final String type;
   final String apiBaseUrl;
-  final String apiKey;
 
   EnvironmentEnum envFromString(String value) {
     switch (value) {

@@ -1,7 +1,7 @@
-import 'package:weather_app/app/core/remote_adapter/manager/i_remote_data_manager.dart';
-import 'package:weather_app/app/core/remote_adapter/models/endpoint.dart';
-import 'package:weather_app/app/core/remote_adapter/models/methods_enum.dart';
-import 'package:weather_app/app/core/remote_adapter/models/remote_data.dart';
+import 'package:app_test_fiap/app/core/remote_adapter/manager/i_remote_data_manager.dart';
+import 'package:app_test_fiap/app/core/remote_adapter/models/endpoint.dart';
+import 'package:app_test_fiap/app/core/remote_adapter/models/methods_enum.dart';
+import 'package:app_test_fiap/app/core/remote_adapter/models/remote_data.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 

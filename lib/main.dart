@@ -4,6 +4,7 @@ import 'package:app_test_fiap/app/core/containers/injection_container.dart'
     as injection;
 import 'package:app_test_fiap/app/core/containers/router_container.dart'
     as router;
+import 'package:google_fonts/google_fonts.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       title: 'App Test FIAP',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
+        fontFamily: GoogleFonts.poppins().fontFamily,
         useMaterial3: true,
       ),
       routerConfig: router.getRoutes,

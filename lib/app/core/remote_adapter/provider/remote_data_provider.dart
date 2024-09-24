@@ -1,5 +1,4 @@
 import 'package:app_test_fiap/app/core/constants/app_constants_manager.dart';
-import 'package:app_test_fiap/app/core/remote_adapter/interceptor/remote_data_interceptor.dart';
 import 'package:dio/dio.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:app_test_fiap/app/core/remote_adapter/interceptor/token_interceptor.dart';
@@ -7,11 +6,10 @@ import 'package:app_test_fiap/app/core/remote_adapter/interceptor/token_intercep
 import 'i_remote_data_provider.dart';
 
 class RemoteDataProvider implements IRemoteDataProvider {
-  RemoteDataProvider({required IAppConstantsManager appConstants}) {
+  RemoteDataProvider({required AppConstantsManager appConstants}) {
     _dio = Dio(
       BaseOptions(baseUrl: appConstants.apiBaseUrl),
     )..interceptors.addAll([
-        RemoteDataInterceptor(apiKey: appConstants.apiKey),
         LogInterceptor(),
         TokenInterceptor(),
       ]);
