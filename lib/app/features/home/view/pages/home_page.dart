@@ -3,6 +3,7 @@ import 'package:app_test_fiap/app/features/home/view/widgets/banner_hug_geek_wid
 import 'package:app_test_fiap/app/features/home/view/widgets/categories_call_widget.dart';
 import 'package:app_test_fiap/app/features/home/view/widgets/categories_list_widget.dart';
 import 'package:app_test_fiap/app/features/home/view/widgets/disclaimer_widget.dart';
+import 'package:app_test_fiap/app/features/home/view/widgets/footer_widget.dart';
 import 'package:app_test_fiap/app/features/home/view/widgets/link_text_widget.dart';
 import 'package:app_test_fiap/app/features/home/view/widgets/products_list_widget.dart';
 import 'package:app_test_fiap/app/features/home/view/widgets/search_text_field_widget.dart';
@@ -87,6 +88,9 @@ class _HomePageState extends State<HomePage> {
                   ),
                   const SliverToBoxAdapter(
                     child: SubscribeEmailWidget(),
+                  ),
+                  const SliverToBoxAdapter(
+                    child: FooterWidget(),
                   ),
                   const SliverToBoxAdapter(
                     child: DisclaimerWidget(),

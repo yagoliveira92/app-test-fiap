@@ -60,7 +60,9 @@ class _SubscribeEmailWidgetState extends State<SubscribeEmailWidget> {
               height: 25,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                if (formKey.currentState!.validate()) {}
+              },
               style: const ButtonStyle(
                 backgroundColor: WidgetStatePropertyAll<Color>(
                   Color(0xFF780BF7),
