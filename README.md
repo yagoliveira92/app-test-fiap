@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.figma.com/design/HrwUyyHR6iM8WX1soNgI1q/Teste-Mobile">
-    <img src="https://iili.io/dLYYy7V.png" alt="Logo" height=40>
+    <img src="https://iili.io/dLYPf2a.png" alt="Logo" height=40>
   </a>
  <p align="center">
    UseDev - Sua loja Geek
