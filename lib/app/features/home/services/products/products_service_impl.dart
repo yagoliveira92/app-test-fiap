@@ -22,6 +22,7 @@ class ProductsServiceImpl implements ProductsService {
       final response = await remoteDataManager.request(endpoint: endpoint);
       if (response.isSuccess) {
         final jsonResponse = jsonDecode(response.data);
+        print(jsonResponse);
         final products = (jsonResponse['produtos'] as List)
             .map((e) => ProductModel.fromJson(e))
             .toList();
