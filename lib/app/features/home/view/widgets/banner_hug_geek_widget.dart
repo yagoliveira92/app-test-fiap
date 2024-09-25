@@ -62,7 +62,7 @@ class BannerHugGeekWidget extends StatelessWidget {
               child: const Text(
                 'Ver as novidades!',
                 style: TextStyle(
-                  fontSize: 31.0,
+                  fontSize: 25.0,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
