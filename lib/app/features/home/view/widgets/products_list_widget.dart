@@ -16,7 +16,7 @@ class ProductsListWidget extends StatelessWidget {
           final product = products[index];
           return Card(
             margin: const EdgeInsets.all(20),
-            color: Color(0xFFEFEFEF),
+            color: const Color(0xFFEFEFEF),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(0),
             ),

@@ -1,4 +1,4 @@
-package br.dev.yago.app_fiap.app_test_fiap
+package br.dev.yago.use_dev
 
 import io.flutter.embedding.android.FlutterActivity
 

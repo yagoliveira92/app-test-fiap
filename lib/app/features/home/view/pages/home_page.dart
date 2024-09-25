@@ -82,6 +82,11 @@ class _HomePageState extends State<HomePage> {
                       onTap: () {},
                     ),
                   ),
+                  const SliverToBoxAdapter(
+                    child: SizedBox(
+                      height: 40,
+                    ),
+                  ),
                 ],
               ),
             _ => const SizedBox.shrink(),
