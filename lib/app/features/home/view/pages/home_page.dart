@@ -2,9 +2,11 @@ import 'package:app_test_fiap/app/features/home/controller/home_cubit.dart';
 import 'package:app_test_fiap/app/features/home/view/widgets/banner_hug_geek_widget.dart';
 import 'package:app_test_fiap/app/features/home/view/widgets/categories_call_widget.dart';
 import 'package:app_test_fiap/app/features/home/view/widgets/categories_list_widget.dart';
+import 'package:app_test_fiap/app/features/home/view/widgets/disclaimer_widget.dart';
 import 'package:app_test_fiap/app/features/home/view/widgets/link_text_widget.dart';
 import 'package:app_test_fiap/app/features/home/view/widgets/products_list_widget.dart';
 import 'package:app_test_fiap/app/features/home/view/widgets/search_text_field_widget.dart';
+import 'package:app_test_fiap/app/features/home/view/widgets/subscribe_email_widget.dart';
 import 'package:app_test_fiap/app/features/home/view/widgets/use_dev_appbar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -24,15 +26,11 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.white,
       appBar: const UseDevAppBar(),
       body: BlocConsumer<HomeCubit, HomeState>(
-        listener: (context, state) {
-          // TODO: implement listener
-        },
+        listener: (context, state) {},
         builder: (context, state) {
           return switch (state) {
-            HomeLoading() => const Column(
-                children: [
-                  CircularProgressIndicator(),
-                ],
+            HomeLoading() => const Center(
+                child: CircularProgressIndicator(),
               ),
             HomeLoaded() => CustomScrollView(
                 slivers: [
@@ -86,6 +84,12 @@ class _HomePageState extends State<HomePage> {
                     child: SizedBox(
                       height: 40,
                     ),
+                  ),
+                  const SliverToBoxAdapter(
+                    child: SubscribeEmailWidget(),
+                  ),
+                  const SliverToBoxAdapter(
+                    child: DisclaimerWidget(),
                   ),
                 ],
               ),

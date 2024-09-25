@@ -42,10 +42,14 @@ class ProductsListWidget extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(20.0),
+                  padding: const EdgeInsets.only(
+                    left: 20,
+                    right: 20,
+                    bottom: 20,
+                  ),
                   child: Text(
                     product.preco.toString().replaceAll('.', ','),
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 31,
                       fontWeight: FontWeight.bold,
                     ),

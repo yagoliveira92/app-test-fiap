@@ -12,29 +12,29 @@ class UseDevAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: Colors.white,
       scrolledUnderElevation: 0.0,
       leading: IconButton(
-        icon: Icon(Icons.menu, size: 50),
+        icon: const Icon(Icons.menu, size: 50),
         onPressed: () {},
       ),
       title: Row(
         children: [
-          Spacer(flex: 3),
+          const Spacer(flex: 3),
           Image.asset(
             'assets/logo/logo_usedev.png',
             height: 40,
           ),
-          Spacer(),
+          const Spacer(),
         ],
       ),
       actions: [
         IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.person_2_outlined,
             size: 50,
           ),
           onPressed: () {},
         ),
         IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.shopping_cart_outlined,
             size: 50,
           ),

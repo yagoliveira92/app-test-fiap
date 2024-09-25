@@ -8,9 +8,9 @@ class SearchTextFieldWidget extends StatelessWidget {
     return TextField(
       textAlign: TextAlign.center,
       decoration: InputDecoration(
-        contentPadding: EdgeInsets.all(30),
+        contentPadding: const EdgeInsets.all(30),
         hintText: 'O que você procura?',
-        hintStyle: TextStyle(
+        hintStyle: const TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 20,
         ),
@@ -20,7 +20,7 @@ class SearchTextFieldWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(50.0),
           borderSide: BorderSide.none,
         ),
-        suffixIcon: Icon(
+        suffixIcon: const Icon(
           Icons.search,
           size: 30,
         ),

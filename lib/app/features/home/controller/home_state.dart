@@ -18,7 +18,7 @@ final class HomeLoaded extends HomeState {
   final List<CategoryModel> categories;
   final List<ProductModel> products;
 
-  HomeLoaded({
+  const HomeLoaded({
     required this.categories,
     required this.products,
   });
@@ -30,7 +30,7 @@ final class HomeLoaded extends HomeState {
 final class HomeError extends HomeState {
   final String message;
 
-  HomeError({
+  const HomeError({
     required this.message,
   });
 
