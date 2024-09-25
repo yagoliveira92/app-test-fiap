@@ -41,9 +41,8 @@ class HomeCubit extends Cubit<HomeState> {
         error = GeneralFailure();
       }
       emit(HomeError(
-        message: error is GeneralFailure
-            ? error.message
-            : 'Verifique sua conexão' ?? '',
+        message:
+            error is GeneralFailure ? error.message : 'Verifique sua conexão',
       ));
     }
   }
