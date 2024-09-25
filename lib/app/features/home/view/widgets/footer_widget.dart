@@ -108,9 +108,9 @@ class FooterWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset('assets/icons/Whatsapp.png'),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Image.asset('assets/icons/Instragam.png'),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Image.asset('assets/icons/Tiktok.png'),
                     ],
                   ),
