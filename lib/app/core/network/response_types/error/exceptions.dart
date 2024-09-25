@@ -1,4 +1,4 @@
-import 'package:app_test_fiap/app/core/network/response_types/error/i_response.dart';
+import 'package:app_test_fiap/app/core/network/response_types/error/response.dart';
 
 class NoConnectionException extends Response implements Exception {
   get message => 'Sem conexão com a internet.';

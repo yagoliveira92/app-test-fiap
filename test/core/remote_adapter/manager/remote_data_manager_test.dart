@@ -5,7 +5,7 @@ import 'package:app_test_fiap/app/core/remote_adapter/models/remote_data.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-class MockRemoteDataManager extends Mock implements IRemoteDataManager {}
+class MockRemoteDataManager extends Mock implements RemoteDataManager {}
 
 class MockEndPoint extends Mock implements Endpoint {}
 

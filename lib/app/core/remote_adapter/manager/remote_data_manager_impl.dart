@@ -1,19 +1,19 @@
-import 'package:app_test_fiap/app/core/network/connection/connection_manager.dart';
+import 'package:app_test_fiap/app/core/network/connection/connection_manager_impl.dart';
 import 'package:app_test_fiap/app/core/remote_adapter/manager/remote_data_manager.dart';
 import 'package:app_test_fiap/app/core/remote_adapter/models/endpoint.dart';
 import 'package:app_test_fiap/app/core/remote_adapter/models/methods_enum.dart';
 import 'package:app_test_fiap/app/core/remote_adapter/models/remote_data.dart';
-import 'package:app_test_fiap/app/core/remote_adapter/provider/i_remote_data_provider.dart';
+import 'package:app_test_fiap/app/core/remote_adapter/provider/remote_data_provider.dart';
 import 'package:dio/dio.dart';
 
 class RemoteDataManagerImpl
-    with ConnectionManager
+    with ConnectionManagerImpl
     implements RemoteDataManager {
   RemoteDataManagerImpl({
-    required IRemoteDataProvider dataProvider,
+    required RemoteDataProvider dataProvider,
   }) : _dataProvider = dataProvider;
 
-  final IRemoteDataProvider _dataProvider;
+  final RemoteDataProvider _dataProvider;
   @override
   Future<RemoteData> request({required Endpoint endpoint}) async {
     var response = await _executeRequest(endpoint: endpoint);

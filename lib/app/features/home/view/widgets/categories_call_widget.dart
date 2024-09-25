@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CategoriesWidget extends StatelessWidget {
-  const CategoriesWidget({super.key});
+class CategoriesCallWidget extends StatelessWidget {
+  const CategoriesCallWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +20,8 @@ class CategoriesWidget extends StatelessWidget {
             ),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 30.0, right: 30.0),
+        const Padding(
+          padding: EdgeInsets.only(left: 30.0, right: 30.0),
           child: Text(
             'De roupas a gadgets tecnológicos temos tudo'
             'para atender suas paixões e hobbies com estilo e autenticidade.',
