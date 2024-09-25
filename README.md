@@ -1,9 +1,14 @@
 <p align="center">
-   Use Dev
+  <a href="https://www.figma.com/design/HrwUyyHR6iM8WX1soNgI1q/Teste-Mobile">
+    <img src="https://freeimage.host/i/dLYYy7V" alt="Logo" height=40>
+  </a>
+ <p align="center">
+   UseDev - Sua loja Geek
+    </p>
    <br>
     <p align="center">
-      <img src="https://img.shields.io/badge/flutter-3.22.1-blue" />
-      <img src="https://img.shields.io/badge/dart-%3E=3.4.1%20%3C4.0.0-blue" />
+      <img src="https://img.shields.io/badge/flutter-3.24.3-blue" />
+      <img src="https://img.shields.io/badge/dart-%3E=3.4.4%20%3C4.0.0-blue" />
       <img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fatrox%2Fsync-dotenv%2Fbadge" />
     </p>
 
@@ -21,21 +26,22 @@ Este projeto segue o Clean Architecture com TDD exemplificada pelo [Resocoder](h
 Demais dúvidas pode abrir uma issue ou consultar a [documentação oficial](https://flutter.io/docs/get-started/install).
 
 ## Build
-Para gerar o build do projeto, você precisa de uma chave de API da [OpenWeather](https://openweathermap.org/).
-Com ela em mãos, você pode gerar o build com o comando:
+Para gerar o build do projeto, você precisará configurar um projeto no Firebase, conforme essa [documentação](https://firebase.google.com/docs/flutter/setup?hl=pt-br&platform=android).
+Após adicionar o projeto do Firebase, basta executar os comandos:
 ```bash
-flutter build apk --dart-define=WEATHER_API_KEY=sua_chave_aqui
+flutter pub get
+flutter build apk
 ```
 
 ## Run
-Para executar o projeto, você também irá precisar da chave de API da [OpenWeather](https://openweathermap.org/).
-Com ela em mãos, você pode executar o projeto com o comando:
+Para executar o projeto, você também irá precisar onfigurar um projeto no [Firebase](https://firebase.google.com/docs/flutter/setup?hl=pt-br&platform=android).
+Com tudo devidamente configurado, você pode executar o projeto com o comando:
 
 ```bash
-flutter run --dart-define=WEATHER_API_KEY=sua_chave_aqui
+flutter pub get
+flutter run
 ```
-Não há integração com um serviço de autenticação. Para acessar o aplicativo, basta colocar um email e senha qualquer
-e clicar em "Entrar".
+Enjoy!
 
 ## Packages e Dependências
 
